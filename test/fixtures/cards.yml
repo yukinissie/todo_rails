@@ -3,11 +3,11 @@
 one:
   name: MyString
   description: MyText
-  column_id: 
-  deadline: 2021-07-29 15:34:09
+  column_id: 1
+  deadline: 
 
 two:
   name: MyString
   description: MyText
-  column_id: 
-  deadline: 2021-07-29 15:34:09
+  column_id: 1
+  deadline: 
