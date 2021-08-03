@@ -2,4 +2,10 @@
 	<h1>This is your to do list</h1>
 	<%= link_to "new_column", new_column_path %>
 	<%= link_to "new_card", new_card_path %>
+	<% @columns.each do |column| %>
+		<h2><%= column.name %></h2>
+	<% end %>
+	<% @cards.each do |card| %>
+		<h2><%= card.name %></h2>
+	<% end %>
 </div>
