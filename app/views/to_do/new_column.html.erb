@@ -1,0 +1,14 @@
+<% provide(:title, 'Create column') %>
+<h1>Create column</h1>
+
+<div>
+	<%= form_for(@column, url: '#') do |f| %>
+		<%= f.label :name %>
+		<%= f.text_field :name %>
+
+		<%= f.label :order %>
+		<%= f.text_field :order %>
+
+		<%= f.submit "Submit", disable_with: 'Submiting...' %>
+	<% end %>
+</div>
