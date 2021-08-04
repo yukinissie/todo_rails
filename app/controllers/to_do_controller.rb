@@ -11,7 +11,7 @@ class ToDoController < ApplicationController
 	def create_column
 		@column = Column.new(column_params)
 		if @column.save
-			render 'home'
+			redirect_to root_path
 		else
 			render 'new'
 		end
@@ -24,7 +24,7 @@ class ToDoController < ApplicationController
 	def create_card
 		@card = Card.new(card_params)
 		if @card.save
-			render 'home'
+			redirect_to root_path
 		else
 			render 'new'
 		end
