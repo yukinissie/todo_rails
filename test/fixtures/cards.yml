@@ -2,12 +2,12 @@
 
 one:
   name: MyString
-  description: MyText
+  discription: MyText
   column_id: 1
-  deadline: 
+  deadline: 2021-08-03 11:46:07
 
 two:
   name: MyString
-  description: MyText
+  discription: MyText
   column_id: 1
-  deadline: 
+  deadline: 2021-08-03 11:46:07

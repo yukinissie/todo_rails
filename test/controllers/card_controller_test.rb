@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class ToDoControllerTest < ActionDispatch::IntegrationTest
+class CardControllerTest < ActionDispatch::IntegrationTest
   # test "the truth" do
   #   assert true
   # end
