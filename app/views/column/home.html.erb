@@ -1,17 +1,15 @@
 <div>
-	<h1>This is your to do list</h1>
-	<%= link_to "new_column", new_column_path %>
-	<%= link_to "new_card", new_card_path %>
+  <h1>Home</h1>
 
-	<div>
-	<% @columns.each do |column| %>
-		<h2>Column: <%= column.name %> (<%= column.id %>)</h2>
-		<h3>Cards:</h3>
-		<% column.cards.each do |card| %>
-			<% if card.column_id == column.id %>
-				<h4><%= card.name %> (<%= card.column_id %>)</h4>
-			<% end %>
-		<% end %>
-	<% end %>
-	</div>
+  <div>
+    <% @columns.each do |column| %>
+      <h2>Column: <%= column.name %> (<%= column.id %>)</h2>
+      <h3>Cards:</h3>
+      <% column.cards.each do |card| %>
+        <% if card.column_id == column.id %>
+          <h4><%= card.name %> (<%= card.column_id %>)</h4>
+        <% end %>
+      <% end %>
+    <% end %>
+  </div>
 </div>
