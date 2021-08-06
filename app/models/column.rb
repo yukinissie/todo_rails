@@ -1,3 +1,3 @@
 class Column < ApplicationRecord
-    has_many :cards
+  has_many :cards
 end
