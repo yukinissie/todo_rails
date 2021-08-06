@@ -7,7 +7,7 @@
 	<% @columns.each do |column| %>
 		<h2>Column: <%= column.name %> (<%= column.id %>)</h2>
 		<h3>Cards:</h3>
-		<% @cards.each do |card| %>
+		<% column.cards.each do |card| %>
 			<% if card.column_id == column.id %>
 				<h4><%= card.name %> (<%= card.column_id %>)</h4>
 			<% end %>
