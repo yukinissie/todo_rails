@@ -9,4 +9,6 @@ Rails.application.routes.draw do
   post '/new_card', to: 'card#create'
 
   get '/card/:id', to: 'card#show'
+
+  resources :card
 end
