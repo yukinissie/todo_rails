@@ -16,6 +16,10 @@ class CardController < ApplicationController
 		end
 	end
 
+  def destroy
+    Card.find(params[:id]).delete
+  end
+
   private
     def card_params
       params.require(:card).permit(
