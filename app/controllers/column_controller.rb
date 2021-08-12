@@ -16,6 +16,10 @@ class ColumnController < ApplicationController
 		end
 	end
 
+	def destroy
+		Column.find(params[:id]).delete
+	end
+
 	private
 		def column_params
 			params.require(:column).permit(
