@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   root 'home#index'
 
+  get '/columns', to: 'column#index'
   get '/columns/new', to: 'column#new'
   post '/columns', to: 'column#create'
 
