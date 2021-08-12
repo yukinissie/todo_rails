@@ -1,5 +1,5 @@
 class ColumnController < ApplicationController
-  def home
+  def index
 		@columns = Column.all
 	end
 

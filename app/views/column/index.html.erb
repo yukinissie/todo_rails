@@ -1,5 +1,8 @@
 <div>
-  <h1>Home</h1>
+  <nav>
+    <%= link_to "Add Column", new_column_path %>
+    <%= link_to "Add Card", new_card_path %>
+  </nav>
 
   <div>
     <% @columns.each do |column| %>
