@@ -11,13 +11,13 @@
       <%= link_to "Delete Column", column_path(column), method: :delete %>
       <h3>Cards:</h3>
       <% column.cards.each do |card| %>
-        <% if card.column_id == column.id %>
+        <div>
           <%= link_to card_path(card) do %>
             <h4><%= card.name %></h4>
           <% end %>
           <%= link_to "Edit Card", edit_card_path(card) %>
           <%= link_to "Delete Card", card_path(card), method: :delete %>
-        <% end %>
+        </div>
       <% end %>
     <% end %>
   </div>
