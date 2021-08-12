@@ -1,7 +1,5 @@
 Rails.application.routes.draw do
-  get 'home/index'
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
-  root 'column#home'
+  root 'home#index'
 
   get '/columns/new', to: 'column#new'
   post '/columns', to: 'column#create'
