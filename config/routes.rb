@@ -8,6 +8,7 @@ Rails.application.routes.draw do
 
   get '/cards/new', to: 'card#new'
   post '/cards', to: 'card#create'
+  delete '/cards/:id', to: 'card#destroy'
 
   get '/cards/:id', to: 'card#show'
 
