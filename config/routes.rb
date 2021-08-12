@@ -8,7 +8,7 @@ Rails.application.routes.draw do
   get '/cards/new', to: 'card#new'
   post '/cards', to: 'card#create'
 
-  get '/card/:id', to: 'card#show'
+  get '/cards/:id', to: 'card#show'
 
   resources :columns
   resources :cards
