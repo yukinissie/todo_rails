@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   get '/columns/new', to: 'column#new'
   post '/columns', to: 'column#create'
   delete '/columns/:id', to: 'column#destroy'
+  get '/columns/:id/edit', to: 'column#edit'
 
   get '/cards/new', to: 'card#new'
   post '/cards', to: 'card#create'
