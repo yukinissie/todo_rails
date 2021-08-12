@@ -2,7 +2,7 @@
 <h1>Create card</h1>
 
 <div>
-	<%= form_for(@card, url: new_card_path) do |f| %>
+	<%= form_for(@card) do |f| %>
 		<%= f.label :name %>
 		<%= f.text_field :name %>
 

@@ -2,7 +2,7 @@
 <h1>Create column</h1>
 
 <div>
-	<%= form_for(@column, url: new_column_path) do |f| %>
+	<%= form_for(@column) do |f| %>
 		<%= f.label :name %>
 		<%= f.text_field :name %>
 
