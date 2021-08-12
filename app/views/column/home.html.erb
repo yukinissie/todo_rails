@@ -7,7 +7,9 @@
       <h3>Cards:</h3>
       <% column.cards.each do |card| %>
         <% if card.column_id == column.id %>
-          <h4><%= card.name %> (<%= card.column_id %>)</h4>
+          <%= link_to card_path(card) do %>
+            <h4><%= card.name %></h4>
+          <% end %>
         <% end %>
       <% end %>
     <% end %>
