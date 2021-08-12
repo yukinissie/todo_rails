@@ -16,6 +16,20 @@ class ColumnController < ApplicationController
 		end
 	end
 
+	def destroy
+		Column.find(params[:id]).delete
+	end
+
+	def edit
+		@column = Column.find(params[:id])
+	end
+
+	def update
+		@column = Column.find(params[:id])
+		@column.update(column_params)
+		redirect_to columns_path
+	end
+
 	private
 		def column_params
 			params.require(:column).permit(
