@@ -11,6 +11,8 @@ Rails.application.routes.draw do
   get '/cards/new', to: 'card#new'
   post '/cards', to: 'card#create'
   delete '/cards/:id', to: 'card#destroy'
+  get '/columns/:id/edit', to: 'card#edit'
+  patch '/columns/:id', to: 'card#update'
 
   get '/cards/:id', to: 'card#show'
 
